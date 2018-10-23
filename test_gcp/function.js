@@ -3,7 +3,6 @@ let _auth = require('./Authorizer');
 const storage = google.storage('v1');
 
 exports.handler = function (request, response) {
-
     storage.objects.insert({
         "bucket": "test_sigma_gcp_storage",
         "name": "Ob1",
